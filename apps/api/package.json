@@ -1,0 +1,23 @@
+{
+  "name": "@bonassa/api",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@bonassa/auth": "workspace:*"
+  },
+  "devDependencies": {
+    "@bonassa/eslint-config": "workspace:*",
+    "@bonassa/prettier": "workspace:*",
+    "@bonassa/typescript": "workspace:*",
+    "@types/node": "^22.5.4",
+    "tsx": "^4.19.0"
+  },
+  "prettier": "@bonassa/prettier",
+  "eslintConfig": {
+    "extends": [
+      "@bonassa/eslint-config/node"
+    ]
+  }  
+}

@@ -1,0 +1,4 @@
+{
+  "extends": "@bonassa/typescript/node.json",
+  "include": ["src/**/*"]
+}
