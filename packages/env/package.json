@@ -1,0 +1,23 @@
+{
+  "name": "@bonassa/env",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.11.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@bonassa/eslint-config": "workspace:*",
+    "@bonassa/prettier": "workspace:*",
+    "@bonassa/typescript": "workspace:*",
+    "@types/node": "^22.5.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@bonassa/eslint-config/library.js"
+    ]
+  },
+  "prettier": "@bonassa/prettier"
+}
