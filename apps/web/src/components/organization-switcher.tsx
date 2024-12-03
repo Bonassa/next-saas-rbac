@@ -23,9 +23,6 @@ export async function OrganizationSwitcher() {
     (org) => org.slug === currentOrgCookie,
   )
 
-  console.log(currentOrgCookie)
-  console.log(currentOrganization)
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="flex w-[168px] items-center gap-2 rounded p-1 text-sm font-medium outline-none focus-visible:ring-2 focus-visible:ring-primary">
