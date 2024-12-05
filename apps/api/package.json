@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "pnpm run env:load -- tsx watch src/http/server.ts",
+    "build": "tsup",
+    "start": "node dist/http/server.js",
     "db:migrate": "pnpm env:load -- prisma migrate dev",
     "db:studio": "pnpm env:load -- prisma studio",
     "env:load": "dotenv -e ../../.env"
@@ -33,6 +35,7 @@
     "@types/node": "^22.5.4",
     "dotenv-cli": "^7.4.2",
     "prisma": "^5.19.1",
+    "tsup": "^8.3.5",
     "tsx": "^4.19.0"
   },
   "prettier": "@bonassa/prettier",
