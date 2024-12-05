@@ -111,6 +111,6 @@ app.register(getPendingInvites)
 
 app.register(getOrganizationBilling)
 
-app.listen({ port: env.PORT }).then(() => {
-  console.log('🚀 HTTP server is running on port 3333')
+app.listen({ port: env.PORT, host: '0.0.0.0' }).then(() => {
+  console.log('🚀 HTTP server running')
 })
